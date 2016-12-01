@@ -8,15 +8,15 @@ const tasks = [
 ];
 
 for (const task of tasks) {
-  describe(`tasks/${task}`, function() {
-    it('should return a correct result', function() {
-      const steps = require(`./tasks/${task}`);
-      const res = require(`./tasks/${task}.test`);
-      const results = runner(steps, res.input);
+  describe(`Day ${task}`, function() {
+    const steps = require(`./tasks/${task}`);
+    const res = require(`./tasks/${task}.test`);
+    const results = runner(steps, res.input);
 
-      for (let index = 0; index < steps.length; index++) {
-        expect(JSON.stringify(results[index])).to.equal(JSON.stringify(res.steps[index]));
-      }
-    });
+    for (let index = 0; index < steps.length; index++) {
+      it(`Step ${index + 1} should be correct`, function() {
+          expect(JSON.stringify(results[index])).to.equal(JSON.stringify(res.steps[index]));
+      });
+    }
   });
 }

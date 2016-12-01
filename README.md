@@ -1,5 +1,7 @@
 # [Advent of Code 2016](http://adventofcode.com/)
 
+[![Build Status](https://travis-ci.org/DarkoKukovec/adventofcode2016.svg?branch=master)](https://travis-ci.org/DarkoKukovec/adventofcode2016)
+
 ## Solutions
 
 The solutions are lists of functions that should be executed.
