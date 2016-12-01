@@ -96,14 +96,8 @@ module.exports = {
     // Transform the place into a string in order to make the manipulation simpler
     map((place) => `${place[0]},${place[1]}`),
 
-    // Make two copies of the places
-    (data) => ({unique: data, all: data}),
-
-    // Make the first list unique
-    (data) => ({unique: uniq(data.unique), all: data.all}),
-
-    // Find the diffs between two arrays
-    (data) => data.all.filter((item, index) => item !== data.unique[index]),
+    // Find the diffs between the list of all places and unique places
+    (data) => data.filter((item, index) => item !== uniq(data)[index]),
 
     // Get the first diff - the first place that apeared somewhere before
     (data) => data[0],
