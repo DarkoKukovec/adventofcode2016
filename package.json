@@ -1,0 +1,24 @@
+{
+  "name": "adventofcode2016",
+  "version": "1.0.0",
+  "description": "http://adventofcode.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkoKukovec/adventofcode2016.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DarkoKukovec/adventofcode2016/issues"
+  },
+  "homepage": "https://github.com/DarkoKukovec/adventofcode2016#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "lodash": "^4.17.2",
+    "mocha": "^3.2.0"
+  }
+}
