@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const runner = require('./runner');
 
-const task = 2;
+const task = 3;
 
 let dataA = fs.readFileSync(path.join(__dirname, `./tasks/${task}A.input.txt`), 'utf-8');
 let dataB = fs.readFileSync(path.join(__dirname, `./tasks/${task}B.input.txt`), 'utf-8');
