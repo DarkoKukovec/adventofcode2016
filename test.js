@@ -3,9 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const runner = require('./runner');
 
-const tasks = [
-  1
-];
+const tasks = [1, 2];
 
 for (const task of tasks) {
   describe(`Day ${task}`, function() {
